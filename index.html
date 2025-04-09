@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+        <html lang="en" class="editor-html">
+            <head>
+            <meta name="twitter:card" content="summary_large_image">
+        
+            <title>666</title>
+            <meta property="og:title" content="666">
+            <meta name="twitter:title" content=666">
+        
+            <meta name="description" content="tetona">
+            <meta property="og:description" content="tetona">
+            <meta name="twitter:description" content="tetona">
+        
+            <meta property="og:image" content="https://api.smtprelay.co/userfile/300dc425-4475-4520-9e6a-974af7d47af4/white_page.jpg">
+            <meta name="twitter:image" content="https://api.smtprelay.co/userfile/300dc425-4475-4520-9e6a-974af7d47af4/white_page.jpg">
+        <script id="show-messages-script">
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach((form, index) => {
+        const successMessage = form.querySelector('.form-success-message')?.cloneNode(true);
+        const alreadySubscribedMessage = form.querySelector('.form-failure-message')?.cloneNode(true);
+        if (successMessage || alreadySubscribedMessage) {
+            function onSubmit(e) {
+                e.preventDefault();
+                fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form)
+                })
+                .then(response => response.text())
+                .then(data => {
+                    if (data.includes("AlreadySubscribed")) {
+                        form.after(alreadySubscribedMessage.firstChild);
+                        form.remove();
+                    } else if (data.includes('Submitted')) {
+                        form.after(successMessage.firstChild);
+                        form.remove();
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+            form.addEventListener('submit', onSubmit);
+        }
+    });
+});
+</script>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                           
+                <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        
+                
+    <style>
+    
+        body.editor-body-wrapper {
+            margin: 0;
+        }
 
+        
+  .editor-html {
+    background-color: #ffffff;
+    
+    min-height: 100vh;
+  }
+
+  .editor-main-content-wrapper * {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  .editor-main-content-wrapper {
+    direction: ltr;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .editor-main-content-wrapper .template-editor__direction-insensitive {
+    direction: ltr;
+  }
+  .editor-main-content-wrapper .template-editor__direction-insensitive > * {
+    direction: ltr;
+  }
+  .editor-main-content-wrapper > *:not(.template-editor__full-width-block) {
+    
+        width: 800px;
+        margin: 0 auto;
+        max-width: 100%;
+    
+  }
+  .editor-main-content-wrapper > .template-editor__full-width-block > * {
+      width: 800px;
+      margin: 0 auto;
+      max-width: 100%;
+  }
+  .editor-main-content-wrapper h1, 
+  .editor-main-content-wrapper h2, 
+  .editor-main-content-wrapper h3 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+  .editor-main-content-wrapper ul, 
+  .editor-main-content-wrapper ol {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .editor-main-content-wrapper li {
+    margin-bottom: 0;
+  }
+
+  
+    .editor-main-content-wrapper .paragraph {
+      font-size: 18px;
+      font-family: Lato, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      line-height: 1.7;
+      text-decoration: none;
+      color: #1E1E1E;
+      
+    }
+  
+
+    .editor-main-content-wrapper .heading1 {
+      font-size: 40px;
+      font-family: Lato, sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      text-align: center;
+      line-height: 1.5;
+      text-decoration: none;
+      color: #111112;
+      
+    }
+  
+
+    .editor-main-content-wrapper .heading2 {
+      font-size: 32px;
+      font-family: Lato, sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      text-align: left;
+      line-height: 1.5;
+      text-decoration: none;
+      color: #111112;
+      
+    }
+  
+
+    .editor-main-content-wrapper .heading3 {
+      font-size: 24px;
+      font-family: Lato, sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      text-align: left;
+      line-height: 1;
+      text-decoration: none;
+      color: #111112;
+      
+    }
+  
+
+  .editor-main-content-wrapper h1 a, 
+  .editor-main-content-wrapper h2 a, 
+  .editor-main-content-wrapper h3 a, 
+  .editor-main-content-wrapper p a, 
+  .editor-main-content-wrapper li a {
+    
+    color: #5457FF;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: normal;
+
+  }
+
+  .editor-main-content-wrapper form input[type="checkbox"]::before {
+    content: "✓";
+    transform: scale(0);
+    display: none;
+  }
+  .editor-main-content-wrapper form input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    display: block;
+  }
+
+  .paragraph > span {text-decoration: none;}.heading1 > span {text-decoration: none;}.heading2 > span {text-decoration: none;}.heading3 > span {text-decoration: none;}.list > span {text-decoration: none;}
+
+  .editor-video-iframe {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%;
+  }
+
+
+        .editor-main-content-wrapper form input[type=submit][disabled] {
+            opacity: 0.75 !important;
+            cursor: default !important;
+        }
+
+        .editor-main-content-wrapper .hidden {
+            display: none;
+        }
+
+        .editor-main-content-wrapper > *:first-child {
+            position: relative;
+        }
+
+        .editor-main-content-wrapper > *:first-child::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            cursor: default;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            pointer-events: none;
+            font-size: 20px;
+            color: #666;
+            filter: invert(1);
+            mix-blend-mode: difference;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .editor-main-content-wrapper {
+                width: 100%;
+            }
+            .editor-main-content-wrapper .single-column {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            .editor-main-content-wrapper .multi-column {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            .editor-main-content-wrapper .imageBlockWrapper {
+                width: 100% !important;
+                margin: auto !important;
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            
+
+.template-editor__stack-mobile{
+    grid-template-columns: 1fr !important;
+}
+
+
+        }
+    
+    </style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="VI">
+    <meta property="og:image" content="https://i.imgur.com/r9yJBd0.png">
+    <meta name="robots" content="index">
+    <meta name="robots" content="index">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="REFRESH" content="0;URL=https://re22mr9.meet-womanhere.com/yprp2g2">
+</head>
+
+            </head>
+            <body class="editor-body-wrapper">
+                <div class="editor-main-content-wrapper "><div style="flex-grow:1" class="wp-block-editor-websiteimageblock-v1"><div style="background-color:#ffffff;padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;height:100%;display:flex"><div style="display:flex;justify-content:center;width:100%"><img src="https://api.smtprelay.co/userfile/300dc425-4475-4520-9e6a-974af7d47af4/480201992_608305885504695_5476125351705752903_n_copia.jpg" width="78%" style="border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:0;border-bottom-right-radius:0;display:block;object-fit:cover" alt=""></div></div></div></div>
+                
+            </body>
+        </html>
